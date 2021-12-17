@@ -1,4 +1,4 @@
-resource "local_file" "foo" {
+resource "local_file" "move" {
   content = templatefile("${path.module}/moved.tf.tpl", {
     from_resource_type = var.from_resource_type
     from_resource_name = var.from_resource_name
